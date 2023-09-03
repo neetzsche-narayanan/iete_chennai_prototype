@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontsheet.css' %}">
+    <link rel="stylesheet" href="{% static 'css/membership.css' %}">
+        
+    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/media/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/media/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/media/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/media/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="{% static 'js/membership.js' %}"></script>
+    <script src="{% static 'js/general.js' %}"></script>
+
+    <title>Membership | IETE Chennai</title>
+</head>
+<body>
+    
+    <div id="main-nav-menus-containers">
+        <div class="desktop-navigation-menu-bg" id="desktop-menu">
+            <div class="navigation-menu-section">
+                <div class="iete-name">
+                    <h3>IETE Chennai</h3>
+                </div>
+                <div class="main-menu-section">
+                    <a href="{% url 'home:homeIndex' %}">HOME</a>
+                    <a href="{% url 'events:eventList' %}">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hamburger-menu-bg" id="mobile-menu" onclick="toggleMobileMenu(this)">
+
+            <div class="hamburger-icon-menu-bg">
+                <div class="hamburger-icon-section">
+                    <div class=line id="lineOne"></div>
+                    <div class=line id="lineTwo"></div>
+                    <div class=line id="lineThree"></div>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-page">
+                <div class="hamburger-menu-section">
+                    <a href="{% url 'home:homeIndex' %}" onclick="changeBackground(this)">HOME</a>
+                    <a href="{% url 'events:eventList' %}" onclick="changeBackground(this)">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}" onclick="changeBackground(this)">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}" onclick="changeBackground(this)">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}" onclick="changeBackground(this)">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}" onclick="changeBackground(this)">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}" onclick="changeBackground(this)">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-container">
+        <div class="hero-bg">
+            <div class="hero-section">
+                <div class="hero-text">
+                    <h1>Membership</h1>
+                    <p>The IETE membership is available at different levels 
+                        based on the applicants' academic qualifications and 
+                        practical experience in electronics, 
+                        computers, telecommunications, information technology and related areas.
+                    </p>                 
+                </div>
+
+                <div class="hero-illustration">
+                    <img src="{% static 'assets/teammeeting.svg' %}">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="benefits-bg">
+            <div class="benefits-section">
+                <div class="benefits-text">
+                    <h1>Why Join Us?</h1>
+                    <ul class="benefits-list">
+                        <li class="first-benefit" id="first-benefit">
+                        <span class="highlight-benefit">Free Personal Subscription</span> to News letter & Technical Review.
+                        </li>
+                        <li class="second-benefit" id="second-benefit">
+                            Availability of <span class="highlight-benefit">IETE publications</span> at concessional price.
+                        </li>
+                        <li class="third-benefit">
+                        Participation in <span class="highlight-benefit">meetings with R & D / Industry leaders</span> and other to discuss scientific/technical/professional issues.</li>
+                        <li class="fourth-benefit">
+                        Opportunities to review technical papers, write articles and <span class="highlight-benefit">participate in IETE Committees</span>.</li>
+                        <li class="first-benefit">
+                            <span class="highlight-benefit">Access to India's most comprehensive
+                                source of publications</span> in electronics, telecommunications, computer and other related fields
+                                at IETE HQ and at Local Centres / Sub-Centres.
+                        </li>
+                        <li class="second-benefit">
+                            Invitation to attend and <span class="highlight-benefit">participate in numerous local, national & international technical programmes</span> at concessional rates.</li>
+                        
+                        <li class="third-benefit">
+                            Consideration for a large number of <span class="highlight-benefit">annual awards & prizes</span> given to honour outstanding contributions.
+                        </li>
+                        <li class="fourth-benefit">
+                            <span class="highlight-benefit">Listing in annual membership directory</span> together with yellow pages - classified experts list.
+                        </li>
+                        <li class="first-benefit">
+                        Participation in the programmes
+                            of <span class="highlight-benefit">IETE-CASET, IETE-C-DETS</span> etc.
+                        </li>
+                        <li class="second-benefit">
+                        <span class="highlight-benefit">Access to IETE - TIC</span> of
+                        interest to R & D and industry (now being developed)
+                        </li>
+                        <li class="third-benefit">
+                        Reciprocal <span class="highlight-benefit">facilities from
+                        selected similar institutions in India</span> and abroad.
+                        </li>
+                        <li class="fourth-benefit">
+                        Facilities for <span class="highlight-benefit">higher
+                        education and improved job opportunities</span>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="plans-bg">
+            <div class="plans-section">
+                <h1>Click on the roles to know more!</h1>
+                <div class="plans-container">
+                    <h3>Corporate Members</h3>
+                    <div class="plans-roles">
+                        <a onclick="roleModalOpen(0)" id="first-role">Honorary Fellow (HF)<span class="marked-info"> (elected)</span></a>
+                        <a onclick="roleModalOpen(1)" id="second-left-role">Distinguished Fellow (DF)<span class="marked-info"> (elected)</span></a>
+                        <a onclick="roleModalOpen(2)" id="third-role">Fellow (F)</a>
+                        <a onclick="roleModalOpen(3)" id="fourth-role">Member (M)</a>
+                        <a onclick="roleModalOpen(4)" id="fifth-role">Associate Member (AM)</a>
+                    </div>
+                </div>
+
+                <div class="plans-container">
+                    <h3>Non-Corporate Members</h3>
+                    <div class="plans-roles">
+                        <a onclick="roleModalOpen(5)" id="first-role">Associates (A)</a>
+                        <a onclick="roleModalOpen(6)" id="second-right-role">Organisational Member (ORG)</a>
+                        <a onclick="roleModalOpen(7)" id="third-role">Diploma Member (DIP)</a>
+                        <a onclick="roleModalOpen(8)" id="fourth-role">Student - AMIETE (AMIETE)</a>
+                        <a onclick="roleModalOpen(7)" id="fifth-role">Student - Diploma (DipIETE)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notes-bg">
+            <div class="notes-section">
+                
+                <div class="help-section">
+                    <h1>Have any doubts?</h1>
+                    <div class="btn-container">
+                        <a href="{% url 'contact:contactIndex' %}">
+                            <button class="btn-primary">Contact us</button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="forms-section">
+                    <h1>Click to access forms:</h1>
+                    <ul class="plans-list">
+                        <li><a href="https://iete.org/IETE1_CORPUP.pdf">Corporate Member</a></li>
+                        <li><a href="https://iete.org/charter.htm">Chartered Engineer</a></li>
+                        <li><a href="https://iete.org/orgmemup.pdf">Organisational Member</a></li>
+                        <li><a href="https://iete.org/AMMEM.pdf">Student - AMIETE</a></li>
+                        <li><a href="https://iete.org/DIPMEM.pdf">Student - DipIETE</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="plan-role-modal-section">
+        <div class="plan-role-modal" id="hf">
+            <div class="modal-header">
+                <h1>Honorary Fellow (HF)</h1>
+                <a onclick="closeModal(0)"><img src="{% static 'assets/close-r.svg' %}"></a>
+            </div>
+            
+            <div class="modal-text">
+                <p>Honorary Fellows are elected by the Council and announced at the Annual General Meeting of the Institution.</p>
+                <p>The Candidate for Honorary Fellow (HF) should possess the following qualifications:</p>
+                <ul class="eligibility-lists">
+                    <li>
+                        Should have achieved eminence through the quality of his work in the 
+                        field of electronics and/or Telecommunication Engineering, (OR) Computer 
+                        Science or Information Technology.
+                    </li>
+                    <li>
+                        Should be distinguished in the field of science/ technology/ industry whose association with the Institution will advance its progress (OR)
+                    </li>
+                    <li>
+                        Should be a distinguished person whom the Institution desires to honour.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="plan-role-modal-section">
+            <div class="plan-role-modal" id="df">
+                <div class="modal-header">
+                    <h1>Distinguished Fellow (DF)</h1>
+                    <a onclick="closeModal(1)"><img src="{% static 'assets/close-r.svg' %}"></a>
+                </div>
+                <div class="modal-text">
+                    <p>
+                        Distinguished Fellows are elected from amongst the Fellows of the Institution by an electoral college consisting of the Council Members and DFs on 
+                        rolls, who in the view of the Council are worthy of distinction by virtue of their outstanding contributions.
+                    </p>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="plan-role-modal" id="f">
+            <div class="modal-header">
+                <h1>Fellow (F)</h1>
+                <a onclick="closeModal(2)"><img src="{% static 'assets/close-r.svg' %}"></a>
+            </div>
+
+            <div class="modal-text">
+                <p>The Candidate for Fellow (F) should possess the following qualifications:</p>
+                <ul class="eligibility-lists">
+                    <li>
+                        Attained the age of at least thirty five on the date of his application for election or transfer.
+                    </li>
+                    <li>
+                        Passed the AMIETE examination of the Institution as per examination regulations prescribed by the Council from time to time (OR)
+                    </li>
+                    <li>
+                        Any other examination, which in the opinion of the Council, is equivalent to, or warrants exemption from the AMIETE examination of the Institution (OR)
+                    </li>
+                    <li>
+                        Passed a post-graduate examination of a recognised university, and/or the Institution or equivalent in any of the disciplines of interest to the institution.
+                    </li>
+                    <li>
+                        Should be engaged in the discipline in a position of high responsibility, or have retired from the profession after having held, before his/her application 
+                        for election or transfer, a position of high responsibility.
+                    </li>
+                    <li>
+                        At least ten years experience in the discipline during which the candidate should have held a position of higher responsibility in an organisation for a 
+                        period of five years, or made outstanding contribution in the discipline.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="plan-role-modal" id="m">
+            <div class="modal-header">
+                <h1>Member (M)</h1>
+                <a onclick="closeModal(3)"><img src="{% static 'assets/close-r.svg' %}"></a>
+            </div>
+            
+            <div class="modal-text">
+                <p>The Candidate for Member (M) should possess the following qualifications:</p>
+                <ul class="eligibility-lists">
+                    <li>
+                        Passed the AMIETE examination of the Institution as per examination regulations prescribed by the Council from time to time (OR)
+                    </li>
+                    <li>
+                        Any other examination, which in the opinion of the Council, is equivalent to, or warrants exemption from the AMIETE examination of the institution (OR)
+                    </li>
+                    <li>
+                        Hold a post-graduate degree from a recognised university, and/or institution or equivalent in any of the disciplines of interest to IETE.
+                    </li>
+                    <li>
+                        Should have had subsequent professional experience of at least five years during which he/she, should have held a position of responsibility 
+                        in an organisation for a period of four years in the discipline or shall have made a significant contribution in Electronics and/or Telecommunications.
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="plan-role-modal" id="am">
+            <div class="modal-header">
+                <h1>Associate Member (AM)</h1>
+                <a onclick="closeModal(4)"><img src="{% static 'assets/close-r.svg' %}"></a>
+            </div>
+            
+            <div class="modal-text">
+                <p>The Candidate for Associate Member (AM) should possess the following qualifications:</p>
+                <ul class="eligibility-lists">
+                    <li>
+                        Attained the age of twenty one years on the date of application for election.
+                    </li>
+                    <li>
+                        Should have passed the AMIETE examination of the Institution as per examination regulations prescribed by the Council from time to time (OR)
+                    </li>
+                    <li>
+                        Any other examination, which in the opinion of the Council, is equivalent to, or warrants exemption from the AMIETE examination of the institution.
+                    </li>
+                </ul>
+            </div>
+            
+            
+        </div>
+
+        <div class="plan-role-modal" id="a">
+            <div class="modal-header">
+                <h1>Associate (A)</h1>
+                <a onclick="closeModal(5)"><img src="{% static 'assets/close-r.svg' %}"></a>
+            </div>
+            <div class="modal-text">
+                <p>
+                    Every candidate for election to the class of Associate shall be not less than 30 years of age shall satisfy the Council 
+                that he has rendered useful service to the profession of Electronics, Telecommunication Engineering, 
+                and allied subjects either in the field of Commerce or Finance or Law or in any other area of application. 
+                </p>
+                <p>
+                    Notwithstanding the above, a candidate enrolled in IETE for 
+                    postgraduate Advanced Level Course in Computer Science shall also qualify for election to the class of Associates.
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="plan-role-modal" id="org">
+            <div class="modal-header">
+                <h1>Organisational Member (ORG)</h1>
+                <a onclick="closeModal(6)"><img src="{% static 'assets/close-r.svg' %}"></a>
+            </div>
+            
+            <div class="modal-text">
+                <ul class="eligibility-lists">
+                    <li>
+                        Organisational Membership is open to any organisation wholly or partly dealing with the disciplines of interest to IETE.
+                    </li>
+                    <li>
+                        IETE Newsletter and one of the technical journals is supplied to all Corporate Members free of cost. 
+                        In addition they are entitled to subsidised subscription rates  for other publications  of IETE.
+                    </li>
+                    <li>
+                        Other benefits include concessional rates for attending seminars, conferences and other technical 
+                        programmes organised by IETE and opportunity to participate in meetings and forums on professional issues. 
+                    </li>
+                    <li>
+                        Members also have the opportunity to undergo professional development programmes conducted by the IETE 
+                        and also avail the benefits of co-operative agreements that IETE has with professional bodies in other countries.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="plan-role-modal" id="dip">
+            <div class="modal-header">
+                <h1>Diploma Member (DipIETE Passout) (DIP)</h1>
+                <a onclick="closeModal(7)"><img src="{% static 'assets/close-r.svg' %}"></a>
+            </div>
+            <div class="modal-text">
+                <ul class="eligibility-lists">
+                    <p>The Candidate for Diploma Member (DipIETE Passout) (DIP) should possess the following qualifications:</p>
+                    <li>
+                        Should not be less than 18 years of age.
+                    </li>
+                    <li>
+                        Should satisfy the Council that he has passed the Diploma Level Examination of the Institution 
+                        as per examination regulations prescribed by the Council from time to time (OR)
+                    </li>
+                    <li>
+                        Any other examination, which in the opinion of the Council, is equivalent to, or warrants exemption from the Diploma Level Examination of the institution.
+                    </li>
+                </ul>
+                
+                <a href="https://www.iete.org/dipietenew.htm#:~:text=A%20candidate%20desirous%20of%20taking,Maths%2FEngineering%2FComputer%20field.">More about DIPIETE Examination</a>    
+            </div>
+            
+        </div>
+
+        <div class="plan-role-modal" id="amiete">
+            <div class="modal-header">
+                <h1>AMIETE Student (AMIETE)</h1>
+                <a onclick="closeModal(8)"><img src="{% static 'assets/close-r.svg' %}"></a>
+            </div>
+            <div class="modal-text">
+                <p>
+                    All students desirous of appearing for the AMIETE Examination conducted by the institution should enroll 
+                    as a Student Member of the IETE. To become a Student Member, a student has to procure the relevant syllabi 
+                    which contains the Application Form for student membership by remitting Rs 250/- as DD in favour of Secretary General IETE, 
+                    New Delhi or by cash payment payment of Rs. 250/- at the Head Quarter or the Centres of IETE.
+                </p>
+    
+                <a href="https://www.iete.org/amite.htm">More about AMIETE Examination</a>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="footer-bg" id="page-footer">
+        <div class="footer-section">
+            <p>© Copyright <b>IETE Chennai</b>.</p>
+            <p>All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

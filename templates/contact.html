@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontsheet.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+        
+    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/media/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/media/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/media/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/media/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="{% static 'js/general.js' %}"></script>
+
+    <title>Contact | IETE Chennai</title>
+</head>
+<body>
+
+    <div id="main-nav-menus-containers">
+        <div class="desktop-navigation-menu-bg" id="desktop-menu">
+            <div class="navigation-menu-section">
+                <div class="iete-name">
+                    <h3>IETE Chennai</h3>
+                </div>
+                <div class="main-menu-section">
+                    <a href="{% url 'home:homeIndex' %}">HOME</a>
+                    <a href="{% url 'events:eventList' %}">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hamburger-menu-bg" id="mobile-menu" onclick="toggleMobileMenu(this)">
+
+            <div class="hamburger-icon-menu-bg">
+                <div class="hamburger-icon-section">
+                    <div class=line id="lineOne"></div>
+                    <div class=line id="lineTwo"></div>
+                    <div class=line id="lineThree"></div>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-page">
+                <div class="hamburger-menu-section">
+                    <a href="{% url 'home:homeIndex' %}" onclick="changeBackground(this)">HOME</a>
+                    <a href="{% url 'events:eventList' %}" onclick="changeBackground(this)">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}" onclick="changeBackground(this)">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}" onclick="changeBackground(this)">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}" onclick="changeBackground(this)">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}" onclick="changeBackground(this)">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}" onclick="changeBackground(this)">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main-container">
+        <div class="hero-bg">
+
+            <div class="hero-section">
+                <h1>Contact</h1>
+                <div class="left-right-align-container">
+                    <div class="hero-details-container">
+                        <div class="hero-topic-container">
+                            <div class="hero-topic-header">
+                                <div class="circle-container">
+                                    <img src="/static/assets/location.svg">
+                                </div>
+                                
+                                <h3>Location</h3>
+                            </div>
+                            <p>
+                                IETE Chennai centre, No: 37,<br>
+                                Conran Smith Road Entrance Peters Road,<br>
+                                Gopalapuram,Chennai,<br>
+                                Tamil Nadu 600086
+                            </p>
+                        </div>
+
+                        <div class="hero-topic-container">
+                            <div class="hero-topic-header">
+                                <div class="circle-container">
+                                    <img src="/static/assets/call.svg">
+                                </div>
+                            <h3>Call</h3>
+                            </div>
+                            <p>
+                                044 2835 0773
+                            </p>
+                        </div>
+
+                        <div class="hero-topic-container">
+                            <div class="hero-topic-header">
+                                <div class="circle-container">
+                                    <img src="/static/assets/baseline-email.svg">
+                                </div>
+                                <h3>Email</h3>
+                            </div>
+                            <p>
+                                ietechennai@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-location-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d7552.300196180965!2d80.25206788035311!3d13.048422149921421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3a52663840000007%3A0x599fdc943bb973ff!2sNo%3A%2037%2C%20Conran%20Smith%20Road%20Entrance%20Peters%20Road%2C%20Gopalapuram%2C%20near%20M%20V%20Diabetes%20Hospital%2C%20Chennai%2C%20Tamil%20Nadu%20600086!3m2!1d13.0488324!2d80.2558289!5e0!3m2!1sen!2sin!4v1693507099571!5m2!1sen!2sin" 
+                            height="350px" width="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bg" id="page-footer">
+        <div class="footer-section">
+            <p>© Copyright <b>IETE Chennai</b>.</p>
+            <p>All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

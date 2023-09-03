@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="../static/assets/fonts/fontsheet.css">
+    <link rel="stylesheet" href="../static/css/executive_committee.css">
+
+    <script src="{% static 'js/general.js' %}"></script>
+        
+    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/media/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/media/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/media/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/media/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Committee | IETE Chennai</title>
+</head>
+<body>
+
+    <div id="main-nav-menus-containers">
+        <div class="desktop-navigation-menu-bg" id="desktop-menu">
+            <div class="navigation-menu-section">
+                <div class="iete-name">
+                    <h3>IETE Chennai</h3>
+                </div>
+                <div class="main-menu-section">
+                    <a href="{% url 'home:homeIndex' %}">HOME</a>
+                    <a href="{% url 'events:eventList' %}">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hamburger-menu-bg" id="mobile-menu" onclick="toggleMobileMenu(this)">
+
+            <div class="hamburger-icon-menu-bg">
+                <div class="hamburger-icon-section">
+                    <div class=line id="lineOne"></div>
+                    <div class=line id="lineTwo"></div>
+                    <div class=line id="lineThree"></div>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-page">
+                <div class="hamburger-menu-section">
+                    <a href="{% url 'home:homeIndex' %}" onclick="changeBackground(this)">HOME</a>
+                    <a href="{% url 'events:eventList' %}" onclick="changeBackground(this)">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}" onclick="changeBackground(this)">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}" onclick="changeBackground(this)">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}" onclick="changeBackground(this)">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}" onclick="changeBackground(this)">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}" onclick="changeBackground(this)">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main-container">
+        <div class="hero-bg" id="hero-bg">
+            <div class="hero-section">
+                <div class="hero-text-container">
+                    <h1>Executive Committee</h1>
+                    <p>Meet the minds behind IETE Chennai's proceedings.</p>
+                </div>
+            </div>
+        </div>
+        <div class="member-bg">
+
+            <div class="member-section">
+            
+                <div class="member-container">
+                    <img src="/media/committee/06 Thulasi Bai.jpg">
+                    <h3>Dr. V Thulasibai</h3>
+                    <p class="designation">Chairperson</p>
+                    <p class="details">
+                        Professor | Dept. of ECE
+                        <br><i>KCG College of
+                        <br>Technology</i>
+                    </p>
+                    <p class="email">thulasi9840@gmail.com</p>
+                    <a class="linkedin-container" href="https://in.linkedin.com/in/thulasi-bai-0846bb59">
+                        <img src="{% static '/assets/linkedin.svg' %}">Linkedin
+                    </a>
+                </div>
+            
+                <div class="member-container">
+                    <img src="/media/committee/00 Venkateswaran.jpg">
+                    <h3>Dr. N Venkateswaran</h3>
+                    <p class="designation">Immdt Past Chairman</p>
+                    <p class="details">
+                        Professor | Dept. of ECE
+                        <br><i>
+                            Sri Siva Subramaniya Nadar
+                            <br>College of Engineering
+                        </i>
+                    </p>
+                    <p class="email">venkateswaran.iete@gmail.com</p>
+                    <a class="linkedin-container" href="https://in.linkedin.com/in/venkateswarann2021">
+                        <img src="{% static '/assets/linkedin.svg' %}">Linkedin
+                    </a>
+                </div>
+
+                <div class="member-container">
+                    <img src="/media/committee/07 Vijendrababu.jpg">
+                    <h3>Dr. D Vijendra Babu</h3>
+                    <p class="designation">Honorary Secretary</p>
+                    <p class="details">
+                        Professor | Dept. of ECE
+                        <br><i>Vellore Institute
+                        <br>of Technology</i>
+                    </p>
+                    <p class="email">dvijendrababu@gmail.com</p>
+                    <a class="linkedin-container" href="https://in.linkedin.com/in/dr-d-vijendra-babu-44454449">
+                        <img src="{% static '/assets/linkedin.svg' %}">Linkedin
+                    </a>
+                </div>
+
+                <div class="member-container" id="second-mem-container">
+                    <img src="/media/committee/blank-male.png">
+                    <h3>Shri N Sridharan</h3>
+                    <p class="designation">Honorary Treasurer</p>
+                    <p class="details">
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <p class="email">nsridharan48@gmail.com</p>
+                    <div class="linkedin-container">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="member-container" id="third-mem-container">
+                    <img src="/media/committee/M Murugan.jpg">
+                    <h3>Dr. M Murugan</h3>
+                    <p class="designation">EC Member</p>
+                    <p class="details">
+                        Principal
+                        <br><i>
+                            SRM Valliammai
+                            <br>Engineering College
+                        </i><br>
+                    </p>
+                    <p class="email">dr.murugan.m@gmail.com</p>
+                    <a class="linkedin-container" href="https://in.linkedin.com/in/murugan-m-35304481">
+                        <img src="{% static '/assets/linkedin.svg' %}">Linkedin
+                    </a>
+                </div>
+
+                <div class="member-container">
+                    <img src="/media/committee/blank-male.png">
+                    <h3>Shri T Perumal</h3>
+                    <p class="designation">EC Member</p>
+                    <p class="details">
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <p class="email">t_perumal@yahoo.com</p>
+                    <div class="linkedin-container">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="member-container">
+                    <img src="/media/committee/blank-male.png">
+                    <h3>Shri A Sadagopan</h3>
+                    <p class="designation">EC Member</p>
+                    <p class="details">
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <p class="email">sadagopan20022002@gmail.com</p>
+                    <div class="linkedin-container">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="member-container">
+                    <img src="/media/committee/blank-male.png">
+                    <h3>Dr. K Senthil Kumar</h3>
+                    <p class="designation">EC Member</p>
+                    <p class="details">
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <p class="email">ksenthilkumar_be@rediffmail.com</p>
+                    <div class="linkedin-container">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="member-container">
+                    <img src="/media/committee/blank-male.png">
+                    <h3>Dr. T Suresh</h3>
+                    <p class="designation">EC Member</p>
+                    <p class="details">
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <p class="email">griffsuresh@gmail.com</p>
+                    <div class="linkedin-container">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="member-container">
+                    <img src="/media/committee/Jose Anand.jpg">
+                    <h3>Dr. Jose Anand</h3>
+                    <p class="designation">EC Member</p>
+                    <p class="details">
+                        Professor | Dept. of ECE
+                        <br><i>
+                            KCG College of
+                            <br>Technology
+                        </i><br>
+                    </p>
+                    <p class="email">joseanandme@yahoo.co.in</p>
+                    <a class="linkedin-container" href="https://in.linkedin.com/in/jose-anand-a-7b67bb11a">
+                        <img src="{% static '/assets/linkedin.svg' %}">Linkedin
+                    </a>
+                </div>
+
+                <div class="member-container">
+                    <img src="/media/committee/blank-male.png">
+                    <h3>Shri M Arun</h3>
+                    <p class="designation">EC Member</p>
+                    <p class="details">
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <p class="email">marunietecsi@gmail.com</p>
+                    <div class="linkedin-container">
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bg" id="page-footer">
+        <div class="footer-section">
+            <p>© Copyright <b>IETE Chennai</b>.</p>
+            <p>All Rights Reserved.</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

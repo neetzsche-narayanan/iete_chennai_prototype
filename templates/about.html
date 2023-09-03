@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontsheet.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+        
+    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/media/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/media/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/media/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/media/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="{% static 'js/general.js' %}"></script>
+
+    <title>About | IETE Chennai</title>
+</head>
+<body>
+    <div id="main-nav-menus-containers">
+        <div class="desktop-navigation-menu-bg" id="desktop-menu">
+            <div class="navigation-menu-section">
+                <div class="iete-name">
+                    <h3>IETE Chennai</h3>
+                </div>
+                <div class="main-menu-section">
+                    <a href="{% url 'home:homeIndex' %}">HOME</a>
+                    <a href="{% url 'events:eventList' %}">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hamburger-menu-bg" id="mobile-menu" onclick="toggleMobileMenu(this)">
+
+            <div class="hamburger-icon-menu-bg">
+                <div class="hamburger-icon-section">
+                    <div class=line id="lineOne"></div>
+                    <div class=line id="lineTwo"></div>
+                    <div class=line id="lineThree"></div>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-page">
+                <div class="hamburger-menu-section">
+                    <a href="{% url 'home:homeIndex' %}" onclick="changeBackground(this)">HOME</a>
+                    <a href="{% url 'events:eventList' %}" onclick="changeBackground(this)">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}" onclick="changeBackground(this)">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}" onclick="changeBackground(this)">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}" onclick="changeBackground(this)">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}" onclick="changeBackground(this)">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}" onclick="changeBackground(this)">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-container">
+        <div class="hero-bg" id="hero-bg">
+            
+            <div class="hero-section">
+                <div class="hero-text-container">
+                    <h1>IETE</h1>
+                    <p align="justify">
+                        Founded in 1953, the Institution of Electronics and Telecommunication Engineers (IETE) is a leading 
+                        professional society. Its vision is to reach the unreached and empower the youth through Technical 
+                        Education and Skill development with a Mission for Advancement of Electronics, Telecommunication, 
+                        Information Technology & other related disciplines; to contribute in Nation's Human Resource & 
+                        Infrastructure Development through our Engineers & Scientists. 
+                        <br><br>The Government of India, Ministry 
+                        of Science and Technology, Department of Scientific & Industrial Research has recognized IETE as 
+                        a Scientific and Industrial Research Organization (SIRO). The Institution has also been notified 
+                        as an Educational Institution of National Eminence by the Government of India. IETE is governed 
+                        by its elected Governing Council headed by an elected President. It has on its roll the Secretary 
+                        General - the head of IETE Secretariat as Chief Executive. The Institution is managed through 
+                        various Committees and Boards nominated by the Governing Council. 
+                        <br><br>The 63 Centers are spread all 
+                        over India & abroad and are managed by respective Executive Committees. To keep pace with 
+                        technological development and achieve the mission, it organizes conferences, conventions, symposia, 
+                        seminars, workshops, publications and brain storming sessions for continued knowledge upgradation 
+                        of its members.
+                    </p>
+                </div>
+                
+                <div class="hero-img-container">
+                    <img src="/media/iete_logo.png">
+                </div>
+            </div>
+        </div>
+        <div class="chennai-centre-bg">
+            <div class="chennai-centre-section">
+                <div class="chennai-centre-image-container">
+                    <img src="/media/iete_chennai.jpeg">
+                </div>
+                <div class="chennai-centre-text-container">
+                    <h1>IETE Chennai</h1>
+                    <p>
+                        Chennai Centre of IETE is committed to attain commanding heights and achieve the status of 
+                        "Centre of Excellence" in Technical, Engineering & Management education by harnessing the 
+                        best practices in educational innovation and through its concerted endeavors like quality 
+                        teaching, industrial consultancy and training to the aspirants including corporate training.
+                        <br><br>
+                        The Centre assigns top priority to the basic need for "education transformation" in keeping 
+                        pace with time, and aims at to develop the highest quality of manpower to cater to the needs 
+                        & expectations of industry, R&D and educational institutions, with higher degree of employability 
+                        for today and tomorrow.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="goals-bg">
+            <div class="goals-section">
+                <div class="goals-container" id="first-goal">
+                    <div class="goals-header">
+                        <img src="/static/assets/vision.svg">
+                        <h2>Vision</h2>
+                    </div>
+                    <p align="justify">
+                        Reaching the un-reached and empowering the youth through Technical Education and Skill Development.
+                    </p>
+                </div>
+
+                <div class="goals-container" id="second-goal">
+                    <div class="goals-header">
+                        <img src="/static/assets/mission.svg">
+                        <h2>Mission</h2>
+                    </div>
+                    <p align="justify">
+                        Advancement of Information Technology,  Electronics, Telecommunication, & other related disciplines 
+                        to contribute in Nation's Human Resource & Infrastructure Development through our Engineers.
+                    </p>
+                </div>
+
+                <div class="goals-container" id="third-goal">
+                    <div class="goals-header">
+                        <img src="/static/assets/motives.svg">
+                        <h2>Motives</h2>
+                    </div>
+                    <p align="justify">
+                        IETE is helping it's students to learn and grow in the emerging field of Electronics and 
+                        Telecommunication. One of the missions of IETE is to provide the best mode of studying a Btech 
+                        degree programme.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="colleges-bg">
+            <div class="colleges-section">
+                <div class="colleges-header">
+                    <h1>List of Colleges</h1>
+                </div>
+                <div class="benefits-list">
+                    <a href="https://www.instagram.com/iete_srm_ramapuram/?hl=en">SRM Institute of Science & Technology<br>Ramapuram</a>
+                    <a href="https://www.svce.ac.in/clubs-activities/iete/">Sri Venkateswara College of Engineering<br>Sriperumbudur</a>
+                    <a href="https://srmeaswari.ac.in/iete-student-forum/">Easwari Engineering College</a>
+
+                    <a>Panimalar Institute of Technology</a>
+                    <a>Veltech Multi Engineering College</a>
+                    <a href="https://www.jeppiaarinstitute.org/iete.php">Jeppiar Institute of Technology</a>
+
+                    <a>RMK College of Engineering and Technology</a>
+                    <a>Velammal Engineering College</a>
+                    <a>KCG College of Technology</a>
+
+                    <a>Dr Rangarajan Dr Sakunthala Engg College</a>
+                    <a>Saveetha Engineering College</a>
+                    <a>Dr. M G R Educational & Research Institute</a>
+
+
+                    <a>DMI College of Engineering</a>
+                    <a>Misrimal Navajee Munoth Jain Engineering College</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bg" id="page-footer">
+        <div class="footer-section">
+            <p>© Copyright <b>IETE Chennai</b>.</p>
+            <p>All Rights Reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontsheet.css' %}">
+    <link rel="stylesheet" href="{% static 'css/special_css/chencon22.css' %}">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/media/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/media/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/media/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/media/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="{% static 'js/general.js' %}"></script>
+
+    {% block titleCont %}
+    <title>{{event_post.event_name}}</title>
+    {% endblock %}
+</head>
+<body>
+    <div id="main-nav-menus-containers">
+        <div class="desktop-navigation-menu-bg" id="desktop-menu">
+            <div class="navigation-menu-section">
+                <div class="iete-name">
+                    <h3>IETE Chennai</h3>
+                </div>
+                <div class="main-menu-section">
+                    <a href="{% url 'home:homeIndex' %}">HOME</a>
+                    <a href="{% url 'events:eventList' %}">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hamburger-menu-bg" id="mobile-menu" onclick="toggleMobileMenu(this)">
+
+            <div class="hamburger-icon-menu-bg">
+                <div class="hamburger-icon-section">
+                    <div class=line id="lineOne"></div>
+                    <div class=line id="lineTwo"></div>
+                    <div class=line id="lineThree"></div>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-page">
+                <div class="hamburger-menu-section">
+                    <a href="{% url 'home:homeIndex' %}" onclick="changeBackground(this)">HOME</a>
+                    <a href="{% url 'events:eventList' %}" onclick="changeBackground(this)">EVENTS</a>
+                    <a href="{% url 'membership:membershipIndex' %}" onclick="changeBackground(this)">MEMBERSHIP</a>
+                    <a href="{% url 'newsletter:newsletterIndex' %}" onclick="changeBackground(this)">NEWSLETTER</a>
+                    <a href="{% url 'committee:committeeIndex' %}" onclick="changeBackground(this)">COMMITTEE</a>
+                    <a href="{% url 'about:aboutIndex' %}" onclick="changeBackground(this)">ABOUT</a>
+                    <a href="{% url 'contact:contactIndex' %}" onclick="changeBackground(this)">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main-container">
+        <div class="hero-section">
+            <h2>IETE CHENCON 2022 - Call for Papers</h2>
+            <div id="days-remaining"></div>
+            <p id="event-date">2022-05-20</p>
+            <div class="event-image-container">
+                <img src="{% static '/assets/chencon/chencon2022_group.jpeg' %}">
+            </div>
+            
+                <div class="btn-container">
+                    <a href="https://easychair.org/conferences/?conf=ietechencon2022">
+                        <button class="btn-primary blue-btn">Submit your papers here!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="event-text-bg">
+                <div class="event-text">
+                    <div class="intro-event">
+                        <p>Hybrid Mode - MAY 20 & 21, 2022<p>
+                        <p>International Conference on Power of Artificial Intelligence and Machine Learning for Human Empowerment</p>
+                    </div>
+                    
+                    <div class="self-post-btn-flex-row-cont">
+                        <a href="{% static '/assets/chencon/chencon_invitation.pdf"><button class="btn-primary">PDF Brochure</button></a>
+                        <a href="{% static '/assets/chencon/CHENCON2022_pdfbrochure.pdf' %}"><button class="btn-primary">Inaugural Session</button></a>
+                        <a href="{% static '/assets/chencon/chencon2022_proceedings.pdf' %}"><button class="btn-primary">CHENCON2022 Proceedings</button></a>
+                    </div>
+                    <div class="text-block">
+                        <h5>Scope of the conference:</h5>
+                        <p>Recently, the use of AI/ML technology has been exponentially increasing in our daily lives. AI/ML applications represent an important evolution in computer science and data processing that is quickly transforming a vast array of domains. IETE CHENCON 2022 provides vibrant opportunities for the delegates to exchange new ideas, applications, practical challenges encountered and to leverage AI and ML technologies. The technical program of the conference will consist of invited key note talks and paper presentations. IETE CHENCON 2022 accepts technical paper presentation from research scholars, faculty, students and industry professionals in emerging areas of AI and ML applications but not limited to:</p>
+                    </div>
+                            
+                    <div class="self-post-image-cont">
+                        <img src="{% static '/assets/chencon/chencon22_tracks.jpg' %}">
+                    </div>
+
+                    <div class="text-block">
+                        <h5>Submission Guidelines:</h5>
+                        <p>Prospective authors are invited to submit full papers describing original, previously unpublished, complete work in four pages in A4 IEEE double column conference template, including figure, results and references. Submitted papers will be reviewed by two to three technical committee or reviewers. Accepted and registered papers of IETE CHENCON 2022 will be published in the conference proceedings. Extended versions of the accepted and presented papers will be recommended for publication in IETE Journals, SCOPUS, SCI and other indexed journals. Authors must submit the papers through their Easy chair account using the link given above or submit the papers to the Email ID: chencon2022@gmail.com</p>
+                        <p><b>Selected and presented papers will be published in the Journal of Science and Technology (ISSN 2456–5660)</b></p>
+                    </div>
+
+                    <div class="self-post-image-cont">
+                        <img src="{% static '/assets/chencon/chencon22_details.png' %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-bg" id="page-footer">
+        <div class="footer-section">
+            <p>© Copyright <b>IETE Chennai</b>.</p>
+            <p>All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+    <script src="{% static 'js/indiv_event.js' %}"></script>
+
+</body>
+</html>
