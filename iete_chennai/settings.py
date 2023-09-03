@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'iete_chennai.wsgi.application'
 #    }
 #}
 
-Render PostgreSQL Database (live)
+#Render PostgreSQL Database (live)
 import dj_database_url
 DATABASES  = {
     'default': dj_database_url.parse(env('DATABASE_URL'))
