@@ -30,9 +30,3 @@ urlpatterns = [
     path('committee/', include(('executive_committee.urls', 'committee'), namespace='committee')),
     path('newsletter/', include(('newsletter.urls', 'newsletter'), namespace='newsletter')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-urlpatterns += [
-    re_path(r'^media/(?P<path>.*)$', serve, {
-        'document_root': settings.MEDIA_ROOT,
-    }),
-]
