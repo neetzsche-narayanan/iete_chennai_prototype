@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'BT Beau Sans';
+    src: url('BT-BeauSans-Light.woff2') format('woff2'),
+        url('BT-BeauSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BT Beau Sans';
+    src: url('BT-BeauSans-Bold.woff2') format('woff2'),
+        url('BT-BeauSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BT Beau Sans';
+    src: url('BT-BeauSans-ExtraBold.woff2') format('woff2'),
+        url('BT-BeauSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BT Beau Sans Extra';
+    src: url('BT-BeauSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('BT-BeauSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BT Beau Sans';
+    src: url('BT-BeauSans-BoldItalic.woff2') format('woff2'),
+        url('BT-BeauSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BT Beau Sans';
+    src: url('BT-BeauSans-Italic.woff2') format('woff2'),
+        url('BT-BeauSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BT Beau Sans';
+    src: url('BT-BeauSans-LightItalic.woff2') format('woff2'),
+        url('BT-BeauSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BT Beau Sans';
+    src: url('BT-BeauSans-Regular.woff2') format('woff2'),
+        url('BT-BeauSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BT Beau Sans';
+    src: url('BT-BeauSans-MediumItalic.woff2') format('woff2'),
+        url('BT-BeauSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BT Beau Sans';
+    src: url('BT-BeauSans-Medium.woff2') format('woff2'),
+        url('BT-BeauSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('Butler-FREE-VERSION-Black-Stencil.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Black-Stencil.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('Butler-FREE-VERSION-Bold-Stencil.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Bold-Stencil.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('Butler-FREE-VERSION-ExtraBold-Stencil.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-ExtraBold-Stencil.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('Butler-FREE-VERSION-ExtraLight-Stencil.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-ExtraLight-Stencil.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('Butler-FREE-VERSION-Medium-Stencil.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Medium-Stencil.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('Butler-FREE-VERSION-SemiBold-Stencil.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-SemiBold-Stencil.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('Butler-FREE-VERSION-Regular-Stencil.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Regular-Stencil.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('Butler-FREE-VERSION-Light-Stencil.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Light-Stencil.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('Butler-FREE-VERSION-Black.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('Butler-FREE-VERSION-Bold.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('Butler-FREE-VERSION-Regular.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('Butler-FREE-VERSION-SemiBold.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('Butler-FREE-VERSION-Light.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('Butler-FREE-VERSION-Medium.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('Butler-FREE-VERSION-ExtraLight.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url('Butler-FREE-VERSION-ExtraBold.woff2') format('woff2'),
+        url('Butler-FREE-VERSION-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
