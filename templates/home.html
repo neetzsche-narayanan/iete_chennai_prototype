@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="{% static 'assets/fonts/fontsheet.css' %}">
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
         
-    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/media/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/media/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/media/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/media/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/media/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/media/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="media/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="media/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="media/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/media/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="media/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <script src="{% static 'js/general.js' %}"></script>
@@ -88,14 +88,14 @@
                     </h4>
                 </div>
                 <div class="hero-logo">
-                    <img src="../media/iete_logo.png">
+                    <img src="..media/iete_logo.png">
                 </div>
             </div>
         </div>
 
         <div class="mobile-name-bg" id="mobile-name-cont">
             <div class="mobile-name-section">
-                <img src="../media/iete_logo.png">
+                <img src="..media/iete_logo.png">
                 <h2>IETE Chennai</h2>
             </div>
         </div>
@@ -117,7 +117,7 @@
                         <div class="events-subsection">
                             {% for upcoming_event in event_list %}
                             <a class="events-container" href="{{upcoming_event.get_absolute_url}}">
-                                <img src="/media/{{upcoming_event.event_image}}">
+                                <img src="media/{{upcoming_event.event_image}}">
                             </a>
                             {% endfor %}
                         </div>
@@ -136,22 +136,22 @@
         <div class="stats-bg">
             <div class="stats-section">
                 <div class="stats-container">
-                    <img src="{% static '/assets/student-light.svg' %}">
+                    <img src="{% static 'assets/student-light.svg' %}">
                     <div class="stats-num">12060</div>
                     <div class="stats-name">Students</div>
                 </div>
                 <div class="stats-container">
-                    <img src="{% static '/assets/woman-teacher-light.svg' %}">
+                    <img src="{% static 'assets/woman-teacher-light.svg' %}">
                     <div class="stats-num">13592</div>
                     <div class="stats-name">Staff</div>
                 </div>
                 <div class="stats-container">
-                    <img src="{% static '/assets/comet.svg' %}">
+                    <img src="{% static 'assets/comet.svg' %}">
                     <div class="stats-num">42</div>
                     <div class="stats-name">Events</div>
                 </div>
                 <div class="stats-container">
-                    <img src="{% static '/assets/school.svg' %}">
+                    <img src="{% static 'assets/school.svg' %}">
                     <div class="stats-num">15</div>
                     <div class="stats-name">Colleges</div>
                 </div>
@@ -166,7 +166,7 @@
                     <div class="context-nav-container">
                         <div class="context-nav-content">
                             <span class="context-nav-title">
-                                <img src="{% static '/assets/fire.svg' %}">
+                                <img src="{% static 'assets/fire.svg' %}">
                                 <h1>Advantageous</h1>
                             </span>
                             <h2>Membership Plans</h2>
@@ -191,7 +191,7 @@
                     <div class="context-nav-container">
                         <div class="context-nav-content">
                             <span class="context-nav-title">
-                                <img src="{% static '/assets/writing-hand-light.svg' %}">
+                                <img src="{% static 'assets/writing-hand-light.svg' %}">
                                 <h1>Practical</h1>
                             </span>
                             <h2>Quarterly Newsletter</h2>
@@ -216,7 +216,7 @@
                     <div class="context-nav-container">
                         <div class="context-nav-content">
                             <span class="context-nav-title">
-                                <img src="{% static '/assets/graduation-cap.svg' %}">                             
+                                <img src="{% static 'assets/graduation-cap.svg' %}">                             
                                 <h1>Premier</h1>
                             </span>
                             <h2>Events & Workshops</h2>
