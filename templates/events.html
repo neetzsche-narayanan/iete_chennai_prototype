@@ -122,10 +122,8 @@
                 <div class="events-subsection">
                     {% for eventObject in event_objects %}
                     <div class="events-container">
-                        {% load static %}
-                        {% static "" as baseUrl %}
                         <a href = "{{ eventObject.get_absolute_url }}">
-                            <img src = "{{baseUrl}}/{{eventObject.event_image.name}}">
+                            <img src = "{% static eventObject.event_image.name %}">
                         </a>
                     </div>
                     {% endfor %}
