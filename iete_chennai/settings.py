@@ -31,7 +31,7 @@ import os
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ietechennai-ssn-wolves.onrender.com']
 
 
 # Application definition
