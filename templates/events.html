@@ -123,7 +123,7 @@
                     {% for eventObject in event_objects %}
                     <div class="events-container">
                         <a href = "{{ eventObject.get_absolute_url }}">
-                            <img src = "{{eventObject.event_image}}">
+                            <img src = "https://res.cloudinary.com/df0fmqsyt/{{eventObject.event_image}}">
                         </a>
                     </div>
                     {% endfor %}
