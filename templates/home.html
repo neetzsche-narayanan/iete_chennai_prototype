@@ -117,7 +117,7 @@
                         <div class="events-subsection">
                             {% for upcoming_event in event_list %}
                             <a class="events-container" href="{{upcoming_event.get_absolute_url}}">
-                                <img src="{{ MEDIA_URL }}/{{upcoming_event.event_image}}">
+                                <img src="https://res.cloudinary.com/df0fmqsyt/{{upcoming_event.event_image}}">
                             </a>
                             {% endfor %}
                         </div>
