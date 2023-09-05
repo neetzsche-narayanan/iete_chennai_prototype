@@ -4,7 +4,7 @@ const dateEvent = new Date(eventDate);
 const dateNow = new Date();
 
 const diffTime = (dateEvent - dateNow);
-const diffDays = Math.floor(diffTime / (1000*3600*24));
+const diffDays = Math.floor(diffTime / (1000*3600*24)) + 1;
 
 if(diffDays >= 0){
     let daysDiv = document.getElementById('days-remaining');
